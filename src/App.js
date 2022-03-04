@@ -1,9 +1,13 @@
-import './App.css';
-import Main from './pages/Main'
+import "./App.css";
+import Modal from "./components/Modal";
+import Main from "./pages/Main";
 
 function App() {
   return (
+    <>
       <Main />
+      <Modal />
+    </>
   );
 }
 
