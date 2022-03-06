@@ -62,7 +62,7 @@ const Inputheader = styled.div`
   display: flex;
   height: 90px;
 
-  & p {
+  p {
     font-size: 17px;
     font-weight: 300;
     margin-top: 45px;
@@ -75,7 +75,7 @@ const Searchbar = styled.div`
   position: relative;
   margin: 36px 19px 0 0;
 
-  & img {
+  img {
     position: absolute;
     top: 11px;
     left: 14px;
@@ -91,13 +91,13 @@ const Inputfield = styled.div`
     background-color: #eeeeee;
     border-radius: 5px;
 
-    & input {
+    input {
         background-color: #eeeeee;
         border: none;
         padding: 10px 0 0 37px;
     }
 
-    & input:focus {
+    input:focus {
     outline: none;
   }
 `

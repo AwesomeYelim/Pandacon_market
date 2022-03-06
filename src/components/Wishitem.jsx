@@ -9,7 +9,7 @@ const Wishitem = () => {
         <Wishimage>
           <img src={Sampleimg} alt="" />
         </Wishimage>
-        <div className="WishDesc">
+        <div>
           <Wishbrand>
             <p>스타벅스</p>
             <span>카페라떼</span>
@@ -46,14 +46,14 @@ const Wishcontent = styled.div`
 
 const Wishbrand = styled.div`
   margin: 17px 0 17px 50px;
-  & p {
+  p {
     font-size: 10px;
     font-weight: 300;
     padding-left: 5px;
     color: #bfbfbf;
   }
 
-  & span {
+  span {
     font-size: 15px;
     font-weight: 300;
     color: #909090;
@@ -61,7 +61,7 @@ const Wishbrand = styled.div`
 `;
 
 const Wishimage = styled.div`
-  & img {
+  img {
     padding: 15px 0 13px 35px;
   }
 `;
@@ -77,7 +77,7 @@ const Wishprice = styled.div`
   display: flex;
   align-items: flex-end;
 
-  & strong {
+  strong {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,7 @@ const Wishprice = styled.div`
     color: #fff;
   }
 
-  & span {
+  span {
     margin-left: 16px;
     font-size: 10px;
     font-weight: 300;
