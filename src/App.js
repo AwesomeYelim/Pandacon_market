@@ -1,12 +1,14 @@
 import "./App.css";
 import Modal from "./components/Modal";
 import Main from "./pages/Main";
+import WishList from "./pages/WishList";
+import GlobalStyle from "./style/GlobalStyle";
 
 function App() {
   return (
     <>
-      <Main />
-      <Modal />
+      <GlobalStyle />
+      <WishList />
     </>
   );
 }
