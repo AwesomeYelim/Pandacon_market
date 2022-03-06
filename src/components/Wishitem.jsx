@@ -70,6 +70,7 @@ const Saveimg = styled.div`
   position: absolute;
   top: 22px;
   right: 16px;
+  cursor: pointer;
 `;
 
 const Wishprice = styled.div`

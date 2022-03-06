@@ -45,6 +45,7 @@ const Exit = styled.img`
   color: #bdbdbd;
   top: 5px;
   left: 15px;
+  cursor: pointer;
 `;
 
 export default WishList;
