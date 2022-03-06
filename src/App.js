@@ -8,6 +8,8 @@ import GlobalStyle from "./styles/GlobalStyle";
 function App() {
   return (
     <>
+      <Modal />
+      <Main />
       <GlobalStyle />
       <SearchPage />
     </>
