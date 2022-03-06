@@ -131,7 +131,7 @@ const Searcheditem = styled.div`
   margin: 10px 10px 10px 0;
   padding: 10px 42px 10px 20px;
 
-  & img {
+  img {
     position: absolute;
     top: 10.5px;
     right: 12px;
