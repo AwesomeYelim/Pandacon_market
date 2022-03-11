@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const ChatItem = ({ userData }) => {
   const { nickName, type, postDate, chatMessage, src } = userData;
-  console.log(src);
   return (
     <ChatItemCont>
       <ChatImgCont>
