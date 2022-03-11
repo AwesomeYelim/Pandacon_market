@@ -5,13 +5,15 @@ const ChatItem = ({ userData }) => {
   const { nickName, type, postDate, chatMessage, src } = userData;
   return (
     <ChatItemCont>
-      <ChatImgCont>
+      <ChatImgCont className={type === "판매자" ? "" : "buyer-style"}>
         <img src={src} alt="profile-img" />
       </ChatImgCont>
       <ChatContent>
         <ChatInfo>
           <NickName>{nickName}</NickName>
-          <Division>{type}</Division>
+          <UserType className={type === "판매자" ? "" : "buyer-style"}>
+            {type}
+          </UserType>
           <PostDate>{postDate}</PostDate>
         </ChatInfo>
         <ChatMessage>{chatMessage}</ChatMessage>
@@ -35,6 +37,11 @@ const ChatImgCont = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  &.buyer-style {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 3px solid #e4e4e4;
+  }
 `;
 
 const ChatContent = styled.div`
@@ -61,7 +68,7 @@ const NickName = styled.p`
   margin-right: 5px;
 `;
 
-const Division = styled.small`
+const UserType = styled.small`
   color: #6b0090;
   font-size: 10px;
   -webkit-transform: scale(0.83);
@@ -75,6 +82,9 @@ const Division = styled.small`
   justify-content: center;
   margin-right: 29px;
   -webkit-text-size-adjust: none;
+  &.buyer-style {
+    color: #ffffff;
+  }
 `;
 
 const PostDate = styled.small`
