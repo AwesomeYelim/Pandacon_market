@@ -5,6 +5,7 @@ import CloseBtnIcon from "../Images/icon/x.svg";
 import ChatItem from "../components/ChatItem";
 import PandaProfile from "../Images/pandaProfile.svg";
 import exampleProfileImg from "../Images/exampleProfileImg.svg";
+import ChatDetailPage from "./ChatDetailPage";
 
 function ChatPage() {
   const userDatas = [
@@ -26,22 +27,30 @@ function ChatPage() {
     },
   ];
   return (
-    <Container>
-      <Header>
-        <CloseBtn>
-          <img src={CloseBtnIcon} alt="창 닫기" />
-        </CloseBtn>
-        <Title>전체 대화 </Title>
-      </Header>
-      <ChatCont>
-        {userDatas.map((userData) => {
-          return <ChatItem key={userData.id} userData={userData} />;
-        })}
-      </ChatCont>
-      <Nav />
-    </Container>
+    <TempCont>
+      <Container>
+        <Header>
+          <CloseBtn>
+            <img src={CloseBtnIcon} alt="창 닫기" />
+          </CloseBtn>
+          <Title>전체 대화 </Title>
+        </Header>
+        <ChatCont>
+          {userDatas.map((userData) => {
+            return <ChatItem key={userData.id} userData={userData} />;
+          })}
+        </ChatCont>
+        <Nav />
+      </Container>
+      <ChatDetailPage />
+    </TempCont>
   );
 }
+
+const TempCont = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
 
 const Container = styled.div`
   width: 375px;
